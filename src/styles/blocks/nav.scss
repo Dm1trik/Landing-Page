@@ -25,7 +25,7 @@
       width: 100%;
       background-color: $main-text-color;
 
-      transition: transform $effect-duration;
+      transition: transform $effect-duration $effect-easing;
       transform: scale(0);
     }
 

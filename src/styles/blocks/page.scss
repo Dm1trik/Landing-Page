@@ -23,7 +23,9 @@
     right: 0;
 
     opacity: 0;
-    transition: all $effect-duration;
+    transition:
+      opacity $effect-duration $effect-easing,
+      transform $effect-duration $effect-easing;
     transform: translateX(-100%);
     pointer-events: none;
 

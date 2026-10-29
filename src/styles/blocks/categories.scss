@@ -29,7 +29,10 @@
     text-decoration: none;
     color: #fff;
 
-    transition: all $effect-duration;
+    transition:
+      background-color $effect-duration $effect-easing,
+      color $effect-duration $effect-easing,
+      border-color $effect-duration $effect-easing;
 
     @include on-desktop {
       grid-column: 1 / 5;
@@ -58,7 +61,7 @@
 
   &__link {
     position: relative;
-    transition: transform $effect-duration;
+    transition: transform $effect-duration $effect-easing;
 
     &--wide {
       @include on-tablet {

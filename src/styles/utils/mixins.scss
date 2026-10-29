@@ -29,7 +29,7 @@
 }
 
 @mixin hover($property, $toValue) {
-  transition: #{$property} $effect-duration;
+  transition: #{$property} $effect-duration $effect-easing;
   &:hover {
     #{$property}: $toValue;
   }
@@ -65,7 +65,7 @@
 }
 
 @mixin scroll-fade-in {
-  animation: fade-in-up linear both;
+  animation: fade-in-up $effect-easing both;
   animation-timeline: view();
 
   animation-range: entry 10% cover 30%;
@@ -83,7 +83,7 @@
 }
 
 @mixin scroll-fade-in-side {
-  animation: scroll-fade-in-side ease-out both;
+  animation: scroll-fade-in-side $effect-easing both;
   animation-timeline: view();
   animation-range: entry 10% cover 30%;
 }
